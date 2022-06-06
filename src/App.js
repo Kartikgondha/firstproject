@@ -3,14 +3,16 @@ import CityClass from './container/CityClass';
 import CityFun from './container/CityFun';
 import ClassBase from './container/ClassBase';
 import FunctionBase from './container/FunctionBase';
+import Times from './container/time/Times';
 
 function App(props) {
   return (
     <div>
       {/* <ClassBase /> */}
       {/* <CityClass /> */}
-      <FunctionBase />
+      {/* <FunctionBase /> */}
       {/* <CityFun /> */}
+      <Times />
     </div>
   );
 }
