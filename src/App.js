@@ -1,22 +1,31 @@
-import React from 'react';
-import CityClass from './container/CityClass';
-import CityFun from './container/CityFun';
-import ClassBase from './container/ClassBase';
-import Counter from './container/counter/Counter';
-import FunctionBase from './container/FunctionBase';
-import Times from './container/time/Times';
-import TimeuseEffect from './container/time/TimeuseEffect';
+import React, { useEffect, useState } from 'react';
+import Loading from './container/Loading';
+import Home from './container/Home';
+
+
+const LoadingWithHome = Loading(Home);
 
 function App(props) {
+
+  const [loading, setLoading ]=useState(false);
+  const [data, setData]=useState([]);
+
+  const orgData =[
+    {id: 6806, name: "Kartik"},
+    {id: 7290, name: "maithil"}
+  ]
+
+  useEffect(()=>{
+    setLoading(true);
+    setTimeout (()=> {setLoading(false); setData(orgData)},2000)
+
+  },[])
   return (
-    <div>
-      {/* <ClassBase /> */}
-      {/* <CityClass /> */}
-      {/* <FunctionBase /> */}
-      {/* <CityFun /> */}
-      {/* <Times /> */}
-      {/* <Counter /> */}
-      <TimeuseEffect />
+    <div> 
+    <LoadingWithHome  Iloading ={loading}
+     data = {data} />
+  
+   
     </div>
   );
 }
