@@ -3,25 +3,26 @@ import React, { useEffect, useState } from 'react';
 function Counter(props) {
     let [counter, setCounter] = useState(0);
   
-    useEffect(()=>{
-    
-    switch (counter) {
-        case counter + 1 <=10:
-            
-            break;
-    
-        default:
-            break;
+   const Increment=()=>{
+       if(counter <10){
+            setCounter(counter+1)
+
+        }
+    }
+    const Decrement=()=>{
+        if(counter > 0){
+        setCounter(counter-1)
+
+        }
+
     }
 
-
-   },[])
     return (
         <div>
             <h1>Counter :: {counter}</h1>
             
-            <button onClick={() => setCounter(counter + 1 )}>+</button>
-            <button onClick={() => setCounter(counter - 1 )}>-</button>
+            <button onClick={() => Increment()}>+</button>
+            <button onClick={() => Decrement()}>-</button>
         </div>
     );
 }
