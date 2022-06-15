@@ -18,9 +18,9 @@ function Loginform(props) {
                     {
                         useType === 'Login' && password === false ? 
                         <h2>Login</h2>
-                         : password === true 
+                         : password === true ?
+                         <h2>Forgot password</h2>:
                           <h2>Signup</h2>
-                          <h2>Forgot password</h2>
                     }
                 
                     <div action method="post" role="form" className="php-email-form">
