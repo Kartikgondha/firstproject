@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
+
 function Header(props) {
     return (
         <div>
@@ -37,6 +38,9 @@ function Header(props) {
                                 </li>
                                 <li>
                                     <NavLink  className="nav-link scrollto" to={"/doctor"}>Doctor</NavLink>
+                                </li>
+                                <li>
+                                    <NavLink  className="nav-link scrollto" to={"/medicine"}>Medicine</NavLink>
                                 </li>
                                 <li>
                                     <NavLink  className="nav-link scrollto" to={"/about"}>About</NavLink>

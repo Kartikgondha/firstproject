@@ -8,6 +8,7 @@ import Department from './container/department/Department';
 import Doctor from './container/doctor/Doctor';
 import About from './container/about/About';
 import Contact from './container/contact/Contact';
+import Medicine from './container/Medicine/Medicine';
 import Loginform from './container/Loginform/Loginform';
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
       <Route path={"/about"} exact component={About}/>
       <Route path={"/contact"} exact component={Contact}/>
       <Route path={"/loginform"} exact component={Loginform}/>
+      <Route path={"/medicine"} exact component={Medicine}/>
     </Switch>
   
    
