@@ -10,6 +10,7 @@ import Home from './Container/Home/Home';
 import Shop from './Container/Shop/Shop';
 import Shopdetail from './Container/Shop/Shopdetail';
 import Cart from './Container/Cart/Cart';
+import Login from './Container/Login/Login';
 
 function App(props) {
   return (
@@ -25,8 +26,9 @@ function App(props) {
         <Route path={"/about"} exact component={About} />
         <Route path={"/contact"} exact component={Contact} />
         <Route path={"/cart"} exact component={Cart } />
+        <Route path={"/login"} exact component={Login} />
       </Switch>
-      <Footer />
+      <Footer />  
     </>
   );
 }

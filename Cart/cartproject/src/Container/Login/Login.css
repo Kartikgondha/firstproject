@@ -1,0 +1,22 @@
+.kartik_main{
+    background-color: #777;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.kartik_h1{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: black;
+}
+.kartik_link .forggot_kartik{
+    margin-left: 50px;
+}
+.kartik_link{
+    cursor: pointer;
+    color: black;
+    margin-bottom: 15px;
+}
+.kartik_btn{
+    margin-bottom: 15px;
+}
